@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter-Text</title>
+</head>
+<body>
+  
+
+    <div>
+<input type="text" id="factory" placeholder="type text"> <br><br>
+<button onclick="myName()">small letter</button>
+<button onclick="myHome()">capital letters</button>
+<button onclick="myTown()">relplys</button>
+<button onclick="myRever()">copy text</button>
+<button onclick="removeMe()">remove text</button>
+
+<ul id="pocinock">
+</ul>
+
+    </div>
+<script>
+ let sumon= document.getElementById('factory');
+ let moshin=document.getElementById('pocinock');
+ function myName(){
+    moshin.innerHTML=sumon.value.toLowerCase();
+    // let result = sumon.value.toLowerCase();
+// document.getElementById("pocinock").innerHTML = result;
+}
+function myHome(){
+    moshin.innerHTML=sumon.value.toUpperCase();
+}
+function myTown(){
+     moshin = document.getElementById("pocinock").innerText="whaw can"; 
+}
+function myRever(){
+    if(sumon.value!==''){
+        alert('copy text')
+    }
+}
+function removeMe(){
+    moshin = document.getElementById("pocinock");
+    moshin.remove();
+}
+     
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
