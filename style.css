@@ -1,0 +1,45 @@
+
+.microw{
+    border:2px solid rgb(212, 114, 254);
+    height:250px;
+    width:550px;
+    border-radius:12px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 100px;
+    margin-left: 330px;
+}
+h1{
+    margin-left: 160px;
+    color: rgb(71, 202, 253);
+}
+#factory{
+   height: 35px;
+   width: 400px;
+   border-radius:12px;
+   border-color: aqua;
+   outline: none;
+   margin-left: 20px;
+}
+button{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: deepskyblue;
+    color: #fff;
+    border-color: #fff;
+}
+#pocinock{
+    margin-left: 142px;
+    font-size: 25px;
+}
+.motifite{
+      margin-left: 51px;
+}
+.ching-color{
+    background-color: #000;
+    color: #fff;
+}
+#ching{
+    margin-top: 25px;
+    margin-left: 40px;
+}

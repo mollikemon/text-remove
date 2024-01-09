@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter-Text</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-
-    <div>
-<input type="text" id="factory" placeholder="type text"> <br><br>
+     <button id="ching">ching-color</button>
+    <div class="microw">
+    <div class="motifite">
+     <h1><i>Enter-Text</i> </h1>
+<input type="text" id="factory" placeholder="type text"> 
+<br><br>
 <button onclick="myName()">small letter</button>
 <button onclick="myHome()">capital letters</button>
 <button onclick="myTown()">relplys</button>
 <button onclick="myRever()">copy text</button>
 <button onclick="removeMe()">remove text</button>
-
 <ul id="pocinock">
 </ul>
-
     </div>
+</div>
+
+<!-- ............,,,,,,,,,,,,,............,,,,,,,,,.........., -->
+<!-- ............,,,,,,,,,,,,,............,,,,,,,,,.........., -->
+
 <script>
  let sumon= document.getElementById('factory');
  let moshin=document.getElementById('pocinock');
@@ -30,31 +36,31 @@
 }
 function myHome(){
     moshin.innerHTML=sumon.value.toUpperCase();
+
 }
 function myTown(){
-     moshin = document.getElementById("pocinock").innerText="whaw can"; 
+    //  moshin = document.getElementById("pocinock").innerText="whaw can"; 
+    // sumon=document.getElementById("factory").value; 
+    moshin.innerText = sumon.value.replace(" ", ",!.");
+
 }
 function myRever(){
     if(sumon.value!==''){
+        navigator.clipboard.writeText(sumon.value);
         alert("Copied the text: " + sumon.value);
     }
 }
 function removeMe(){
-    sumon=document.getElementById("factory").value = '';
+    sumon.value = '';
     moshin.remove();
 }
      
-
-
-
-
-
-
+document.getElementById('ching').addEventListener('click',function(){
+    document.body.classList.toggle("ching-color");
+})
 
 
 </script>
-
-
 
 </body>
 </html>
