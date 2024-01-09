@@ -1,7 +1,7 @@
 
 .microw{
     border:2px solid rgb(212, 114, 254);
-    height:250px;
+    height:100%;
     width:550px;
     border-radius:12px;
     background-color: #fff;
@@ -29,7 +29,7 @@ button{
     border-color: #fff;
 }
 #pocinock{
-    margin-left: 142px;
+    margin-left: 20%;
     font-size: 25px;
 }
 .motifite{
